@@ -1,0 +1,262 @@
+/* ===== Navbar background and text ===== */
+.navbar.bg-dark {
+  background-color: #8e95a3 !important; /* Deep blue shade */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar brand */
+.navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #66b2ff;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+  color: #99ccff;
+  text-shadow: 0 0 5px #99ccff;
+}
+
+/* Navbar links */
+.navbar .nav-link {
+  font-weight: 500;
+  color: #cfd9f1;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #99ccff;
+  text-shadow: 0 0 5px #99ccff;
+}
+
+/* Active link style */
+.navbar .nav-link.active {
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom: 2px solid #66b2ff;
+}
+
+/* Navbar toggler (hamburger) */
+.navbar-dark .navbar-toggler {
+  border-color: #6d7280;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox='0%200%2030%2030'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20stroke='rgba%2866%2C178%2C255%2C0.9%29'%20stroke-width='2'%20stroke-linecap='round'%20stroke-miterlimit='10'%20d='M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E");
+}
+
+.language-switcher {
+  width: 110px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
+  border: 1px solid #66b2ff;
+  color: #cfd9f1;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.language-switcher:focus {
+  outline: none;
+  box-shadow: 0 0 8px #66b2ff;
+}
+
+/* Dark mode styles for the language switcher */
+body.dark-mode .language-switcher {
+  background-color: #1e1e1e;
+  border-color: #99ccff;
+  color: #99ccff;
+}
+
+
+body.dark-mode .navbar .navbar-brand,
+body.dark-mode .navbar .nav-link {
+  color: #99ccff;
+  text-shadow: none;
+}
+
+body.dark-mode .navbar .nav-link.active {
+  color: #ffffff;
+  border-bottom-color: #99ccff;
+}
+
+body.dark-mode .navbar-dark .navbar-toggler {
+  border-color: #99ccff;
+}
+
+body.dark-mode .navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox='0%200%2030%2030'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20stroke='rgba%2866%2C178%2C255%2C0.9%29'%20stroke-width='2'%20stroke-linecap='round'%20stroke-miterlimit='10'%20d='M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E");
+}
+
+body.dark-mode .language-switcher {
+  background-color: #1e1e1e;
+  border-color: #99ccff;
+  color: #99ccff;
+}
+
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== Fade-in animation ===== */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1.5s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===== Skills Section ===== */
+.skills-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== Call To Action Section ===== */
+.cta-section {
+  background-color: #007bff;
+  color: white;
+  padding: 50px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+}
+
+.cta-section a {
+  margin-top: 20px;
+}
+
+/* ===== Rounded Profile Image ===== */
+.rounded-circle {
+  border: 4px solid #007bff;
+  transition: transform 0.4s ease-in-out, border-color 0.3s ease;
+}
+
+.rounded-circle:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Header Image ===== */
+header img {
+  border: 5px solid #007bff;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Section Headings ===== */
+h2 {
+  font-weight: 600;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004ba0;
+}
+
+.btn-light {
+  border: 1px solid #fff;
+}
+
+/* ===== Section Padding ===== */
+section,
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* ===== Cards ===== */
+.card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===== Modal Content ===== */
+.modal-content {
+  border-radius: 8px;
+}
+
+/* ===== Footer ===== */
+footer {
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== Responsive Image Fix ===== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Dark Mode Styles ===== */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode header,
+body.dark-mode .skills-section,
+body.dark-mode .cta-section,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #0056b3;
+  border-color: #004080;
+}
+
+body.dark-mode h2 {
+  color: #66b2ff;
+}
+
+body.dark-mode a {
+  color: #66b2ff;
+}
+
+body.dark-mode .rounded-circle {
+  border-color: #66b2ff;
+}
+
+body.dark-mode header img {
+  border-color: #66b2ff;
+}
+
+body.dark-mode .card:hover {
+  box-shadow: 0 5px 15px rgba(102, 178, 255, 0.6);
+}

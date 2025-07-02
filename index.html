@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hirko | Software Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assert/css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" data-i18n="brand">Hirko</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="nav_projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+
+        <!-- Dark Mode Button -->
+        <button id="darkModeToggle" class="btn btn-outline-light ms-3">
+          🌙 Dark Mode
+        </button>
+
+        <!-- Language Switcher Dropdown -->
+        <select id="languageSwitcher" class="form-select form-select-sm ms-3 language-switcher" aria-label="Language Switcher">
+          <option value="en" selected>🇬🇧 English</option>
+          <option value="am">🇪🇹 Amharic</option>
+          <option value="fr">🇫🇷 French</option>
+          <option value="de">🇩🇪 German</option>
+          <option value="es">🇪🇸 Spanish</option>
+          <option value="cn">🇨🇳 Chinese</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="text-center p-5 bg-light">
+    <img src="assert/images/hirko.jpg" class="rounded-circle" width="150" alt="My Photo" />
+    <h1 class="mt-3" data-i18n="hero_greeting">Hi, I'm Hirko</h1>
+    <p class="lead" data-i18n="hero_intro">Software Developer passionate about web and mobile applications</p>
+    <a class="btn btn-primary" href="resume.pdf" target="_blank" data-i18n="download_resume">Download Resume</a>
+  </header>
+
+  <!-- Skills Section -->
+  <section class="skills-section text-center">
+    <div class="container">
+      <h2 class="mb-4" data-i18n="skills_heading">My Core Skills</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <h5 data-i18n="skill_frontend_title">Frontend</h5>
+          <p data-i18n="skill_frontend_desc">HTML, CSS, JavaScript, Bootstrap</p>
+        </div>
+        <div class="col-md-3">
+          <h5 data-i18n="skill_backend_title">Backend</h5>
+          <p data-i18n="skill_backend_desc">PHP, Laravel, Node.js</p>
+        </div>
+        <div class="col-md-3">
+          <h5 data-i18n="skill_database_title">Database</h5>
+          <p data-i18n="skill_database_desc">MySQL, MongoDB</p>
+        </div>
+        <div class="col-md-3">
+          <h5 data-i18n="skill_tools_title">Tools</h5>
+          <p data-i18n="skill_tools_desc">Git, VS Code, XAMPP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section text-center">
+    <div class="container">
+      <h2 data-i18n="cta_heading">Need a Web Developer?</h2>
+      <p class="mb-4" data-i18n="cta_text">I’m available for freelance work and collaboration. Let’s build something great together!</p>
+      <a href="contact.html" class="btn btn-light" data-i18n="cta_contact_btn">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-dark text-white mt-4">
+    <span data-i18n="footer_text">© 2025 Hirko | All rights reserved</span>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggleBtn = document.getElementById('darkModeToggle');
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+      toggleBtn.textContent = '☀️ Light Mode';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if(document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+        toggleBtn.textContent = '☀️ Light Mode';
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+        toggleBtn.textContent = '🌙 Dark Mode';
+      }
+    });
+  </script>
+
+  <!-- Language Switcher Script -->
+  <script>
+    const translations = {
+      en: {
+        brand: "Hirko",
+        nav_home: "Home",
+        nav_about: "About",
+        nav_projects: "Projects",
+        nav_contact: "Contact",
+        hero_greeting: "Hi, I'm Hirko",
+        hero_intro: "Software Developer passionate about web and mobile applications",
+        download_resume: "Download Resume",
+        skills_heading: "My Core Skills",
+        skill_frontend_title: "Frontend",
+        skill_frontend_desc: "HTML, CSS, JavaScript, Bootstrap",
+        skill_backend_title: "Backend",
+        skill_backend_desc: "PHP, Laravel, Node.js",
+        skill_database_title: "Database",
+        skill_database_desc: "MySQL, MongoDB",
+        skill_tools_title: "Tools",
+        skill_tools_desc: "Git, VS Code, XAMPP",
+        cta_heading: "Need a Web Developer?",
+        cta_text: "I’m available for freelance work and collaboration. Let’s build something great together!",
+        cta_contact_btn: "Contact Me",
+        footer_text: "© 2025 Hirko | All rights reserved"
+      },
+      am: {
+        brand: "ሂርኮ",
+        nav_home: "መነሻ",
+        nav_about: "ስለኔ",
+        nav_projects: "ፕሮጀክቶች",
+        nav_contact: "አግኙኝ",
+        hero_greeting: "ሰላም፣ እኔ ሂርኮ ነኝ",
+        hero_intro: "የድህረገፅና የሞባይል መተግበሪያ አበልጣጭ",
+        download_resume: "ሪዙመ አውርድ",
+        skills_heading: "የእኔ አሰልጣኞች",
+        skill_frontend_title: "ፈርንትንድ",
+        skill_frontend_desc: "HTML, CSS, JavaScript, Bootstrap",
+        skill_backend_title: "ባክንድ",
+        skill_backend_desc: "PHP, Laravel, Node.js",
+        skill_database_title: "ዳታቤዝ",
+        skill_database_desc: "MySQL, MongoDB",
+        skill_tools_title: "መሣሪያዎች",
+        skill_tools_desc: "Git, VS Code, XAMPP",
+        cta_heading: "የድህረገፅ አበልጣጭ እፈልጋለሁ?",
+        cta_text: "ለፍራንስ ስራ እና ለተባበርነት ዝግጅት ነኝ። እንድንሠራ እንሂድ!",
+        cta_contact_btn: "አግኙኝ",
+        footer_text: "© 2025 ሂርኮ | መብት የተጠበቀ"
+      },
+      fr: {
+        brand: "Hirko",
+        nav_home: "Accueil",
+        nav_about: "À propos",
+        nav_projects: "Projets",
+        nav_contact: "Contact",
+        hero_greeting: "Salut, je suis Hirko",
+        hero_intro: "Développeur logiciel passionné par les applications web et mobiles",
+        download_resume: "Télécharger le CV",
+        skills_heading: "Mes Compétences Clés",
+        skill_frontend_title: "Frontend",
+        skill_frontend_desc: "HTML, CSS, JavaScript, Bootstrap",
+        skill_backend_title: "Backend",
+        skill_backend_desc: "PHP, Laravel, Node.js",
+        skill_database_title: "Base de données",
+        skill_database_desc: "MySQL, MongoDB",
+        skill_tools_title: "Outils",
+        skill_tools_desc: "Git, VS Code, XAMPP",
+        cta_heading: "Besoin d'un développeur web?",
+        cta_text: "Je suis disponible pour du travail freelance et des collaborations. Construisons quelque chose de génial ensemble!",
+        cta_contact_btn: "Contactez-moi",
+        footer_text: "© 2025 Hirko | Tous droits réservés"
+      },
+      de: {
+        brand: "Hirko",
+        nav_home: "Startseite",
+        nav_about: "Über mich",
+        nav_projects: "Projekte",
+        nav_contact: "Kontakt",
+        hero_greeting: "Hallo, ich bin Hirko",
+        hero_intro: "Softwareentwickler mit Leidenschaft für Web- und mobile Anwendungen",
+        download_resume: "Lebenslauf herunterladen",
+        skills_heading: "Meine Kernkompetenzen",
+        skill_frontend_title: "Frontend",
+        skill_frontend_desc: "HTML, CSS, JavaScript, Bootstrap",
+        skill_backend_title: "Backend",
+        skill_backend_desc: "PHP, Laravel, Node.js",
+        skill_database_title: "Datenbank",
+        skill_database_desc: "MySQL, MongoDB",
+        skill_tools_title: "Werkzeuge",
+        skill_tools_desc: "Git, VS Code, XAMPP",
+        cta_heading: "Brauchen Sie einen Webentwickler?",
+        cta_text: "Ich bin verfügbar für Freelance-Arbeit und Zusammenarbeit. Lassen Sie uns gemeinsam etwas Großartiges bauen!",
+        cta_contact_btn: "Kontaktieren Sie mich",
+        footer_text: "© 2025 Hirko | Alle Rechte vorbehalten"
+      },
+      es: {
+        brand: "Hirko",
+        nav_home: "Inicio",
+        nav_about: "Acerca de",
+        nav_projects: "Proyectos",
+        nav_contact: "Contacto",
+        hero_greeting: "Hola, soy Hirko",
+        hero_intro: "Desarrollador de software apasionado por aplicaciones web y móviles",
+        download_resume: "Descargar CV",
+        skills_heading: "Mis Habilidades Clave",
+        skill_frontend_title: "Frontend",
+        skill_frontend_desc: "HTML, CSS, JavaScript, Bootstrap",
+        skill_backend_title: "Backend",
+        skill_backend_desc: "PHP, Laravel, Node.js",
+        skill_database_title: "Base de datos",
+        skill_database_desc: "MySQL, MongoDB",
+        skill_tools_title: "Herramientas",
+        skill_tools_desc: "Git, VS Code, XAMPP",
+        cta_heading: "¿Necesitas un desarrollador web?",
+        cta_text: "Estoy disponible para trabajo freelance y colaboración. ¡Construyamos algo grandioso juntos!",
+        cta_contact_btn: "Contáctame",
+        footer_text: "© 2025 Hirko | Todos los derechos reservados"
+      },
+      cn: {
+        brand: "希尔科",
+        nav_home: "首页",
+        nav_about: "关于",
+        nav_projects: "项目",
+        nav_contact: "联系",
+        hero_greeting: "你好，我是希尔科",
+        hero_intro: "热爱网页和移动应用的软件开发者",
+        download_resume: "下载简历",
+        skills_heading: "我的核心技能",
+        skill_frontend_title: "前端",
+        skill_frontend_desc: "HTML，CSS，JavaScript，Bootstrap",
+        skill_backend_title: "后端",
+        skill_backend_desc: "PHP，Laravel，Node.js",
+        skill_database_title: "数据库",
+        skill_database_desc: "MySQL，MongoDB",
+        skill_tools_title: "工具",
+        skill_tools_desc: "Git，VS Code，XAMPP",
+        cta_heading: "需要网页开发者吗？",
+        cta_text: "我提供自由职业工作和合作。让我们一起打造伟大的作品！",
+        cta_contact_btn: "联系我",
+        footer_text: "© 2025 希尔科 | 版权所有"
+      }
+    };
+
+    const languageSwitcher = document.getElementById("languageSwitcher");
+
+    function translatePage(lang) {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if(translations[lang] && translations[lang][key]){
+          el.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    let currentLang = localStorage.getItem("language") || "en";
+    languageSwitcher.value = currentLang;
+    translatePage(currentLang);
+
+    languageSwitcher.addEventListener("change", () => {
+      currentLang = languageSwitcher.value;
+      translatePage(currentLang);
+      localStorage.setItem("language", currentLang);
+    });
+  </script>
+</body>
+</html>
