@@ -378,6 +378,10 @@
         }
         
         /* Experience Section */
+        #experience {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
         .timeline {
             position: relative;
             max-width: 800px;
@@ -450,6 +454,21 @@
             font-size: 1.1rem;
             color: var(--secondary-color);
             margin-bottom: 15px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .tech-tag {
+            background: #e0f2fe;
+            color: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
         }
         
         /* Projects Section */
@@ -899,8 +918,8 @@
                 <h1>Hi, I'm <span>HIRKO Gemechu</span></h1>
                 <div class="typed-text">
                     <span>Software Engineer</span>
-                    <span>Full Stack Developer</span>
-                    <span>Backend Specialist</span>
+                    <span>Web Developer</span>
+                    <span>Systems Analyst</span>
                 </div>
                 <p>I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Transforming complex problems into elegant solutions.</p>
                 <div class="hero-btns">
@@ -925,7 +944,7 @@
                 <div class="about-info">
                     <h3>Software Engineer & Web Developer</h3>
                     <p>I'm a passionate software engineer with expertise in creating robust and scalable web applications. My focus is on developing efficient solutions using modern technologies and best practices.</p>
-                    <p>I specialize in building RESTful APIs, microservices architecture, and implementing responsive front-end interfaces. My goal is to deliver high-quality software that meets both user needs and business requirements.</p>
+                    <p>With experience in both academic and corporate environments, I've delivered impactful solutions for universities and businesses alike. My technical skills span the full development stack.</p>
                     <div class="about-details">
                         <div class="detail-item">
                             <i class="fas fa-user"></i>
@@ -942,17 +961,17 @@
                             </div>
                         </div>
                         <div class="detail-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div class="detail-text">
-                                <h4>Education:</h4>
-                                <span>BSc in Software Engineering</span>
-                            </div>
-                        </div>
-                        <div class="detail-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="detail-text">
                                 <h4>Location:</h4>
                                 <span>Ethiopia</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="detail-text">
+                                <h4>Education:</h4>
+                                <span>BSc in Software Engineering</span>
                             </div>
                         </div>
                     </div>
@@ -1063,28 +1082,60 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2021 - Present</span>
-                        <h4>Senior Software Engineer</h4>
-                        <h5>Tech Innovations Inc.</h5>
-                        <p>Lead development of scalable web applications using React and Node.js. Implemented CI/CD pipelines reducing deployment time by 40%. Mentored junior developers and conducted code reviews.</p>
+                        <span class="timeline-date">2020 (5 months)</span>
+                        <h4>Software Developer Apprentice</h4>
+                        <h5>Wollega University</h5>
+                        <p>Developed a comprehensive class schedule system for the university. Created a web-based solution to manage class schedules, room allocations, and faculty assignments.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2019 - 2021</span>
-                        <h4>Full Stack Developer</h4>
-                        <h5>Digital Solutions Co.</h5>
-                        <p>Developed and maintained multiple client applications using Vue.js and Django. Optimized database queries improving application performance by 30%. Collaborated with UX designers to implement responsive interfaces.</p>
+                        <span class="timeline-date">2021</span>
+                        <h4>Final Project Developer</h4>
+                        <h5>Arba Minch University</h5>
+                        <p>Developed a university website as my final project. Created a responsive and user-friendly platform for the university community, featuring news, events, and academic resources.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2017 - 2019</span>
-                        <h4>Junior Developer</h4>
-                        <h5>StartUp Ventures</h5>
-                        <p>Built RESTful APIs and implemented front-end features using React. Participated in Agile development processes and contributed to product planning sessions. Fixed critical bugs in production systems.</p>
+                        <span class="timeline-date">2021-2022</span>
+                        <h4>CCTV Systems Specialist</h4>
+                        <h5>Kerchanshe Group</h5>
+                        <p>Managed and maintained CCTV systems for security operations. Provided technical support and troubleshooting for surveillance systems across multiple locations.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Network Security</span>
+                            <span class="tech-tag">Surveillance Systems</span>
+                            <span class="tech-tag">Technical Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022-Present</span>
+                        <h4>Web Developer</h4>
+                        <h5>Kerchanshe Group</h5>
+                        <p>Developed and launched the Enter Africa website for Kerchanshe Group. Created a modern, responsive platform to showcase the company's initiatives across Africa.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <p class="project-link">
+                            <a href="http://kerchanshe.co/enterafrica/" target="_blank">View Project: kerchanshe.co/enterafrica/</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1098,64 +1149,58 @@
                 <h2>My Projects</h2>
                 <p>Explore my recent work and case studies</p>
             </div>
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Apps</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="api">API</button>
-            </div>
             <div class="projects-grid">
-                <div class="project-card" data-category="web">
+                <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="E-commerce Platform">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="University Class Schedule System">
                         <div class="project-overlay">
                             <a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h4>E-commerce Platform</h4>
-                        <p>A full-featured online shopping platform with payment integration, inventory management, and admin dashboard.</p>
+                        <h4>Class Schedule System</h4>
+                        <p>A comprehensive scheduling solution for Wollega University to manage class timetables, room allocations, and faculty assignments.</p>
                         <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">JavaScript</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="api">
+                <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="API Gateway">
+                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="University Website">
                         <div class="project-overlay">
                             <a href="#"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h4>Microservices API Gateway</h4>
-                        <p>Scalable API gateway for managing microservices architecture with authentication, rate limiting, and logging.</p>
+                        <h4>Arba Minch University Website</h4>
+                        <p>Official website for Arba Minch University featuring news, events, academic resources, and department information.</p>
                         <div class="project-tags">
-                            <span class="project-tag">Express.js</span>
-                            <span class="project-tag">Redis</span>
-                            <span class="project-tag">Kubernetes</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PHP</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" data-category="mobile">
+                <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fitness App">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Enter Africa Website">
                         <div class="project-overlay">
-                            <a href="#"><i class="fas fa-link"></i></a>
+                            <a href="http://kerchanshe.co/enterafrica/" target="_blank"><i class="fas fa-link"></i></a>
                             <a href="#"><i class="fas fa-eye"></i></a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h4>Fitness Tracking App</h4>
-                        <p>Mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations.</p>
+                        <h4>Enter Africa Website</h4>
+                        <p>Corporate website for Kerchanshe's Enter Africa initiative showcasing their projects and impact across the continent.</p>
                         <div class="project-tags">
-                            <span class="project-tag">React Native</span>
-                            <span class="project-tag">Firebase</span>
-                            <span class="project-tag">Redux</span>
+                            <span class="project-tag">WordPress</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">CSS</span>
                         </div>
                     </div>
                 </div>
@@ -1295,7 +1340,7 @@
         const typedTextSpan = document.querySelector('.typed-text');
         const cursorSpan = document.querySelector('.cursor');
         
-        const textArray = ['Software Engineer', 'Full Stack Developer', 'Backend Specialist'];
+        const textArray = ['Software Engineer', 'Web Developer', 'Systems Analyst'];
         const typingDelay = 100;
         const erasingDelay = 50;
         const newTextDelay = 1500;
@@ -1330,29 +1375,6 @@
         
         document.addEventListener('DOMContentLoaded', function() {
             setTimeout(type, newTextDelay + 250);
-        });
-        
-        // Project Filtering
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('.project-card');
-        
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
-                button.classList.add('active');
-                
-                const filter = button.getAttribute('data-filter');
-                
-                projectCards.forEach(card => {
-                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
         });
     </script>
 </body>
